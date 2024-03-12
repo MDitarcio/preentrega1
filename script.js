@@ -1,7 +1,5 @@
 alert('--- A MARTE VIAJES --- \n Bienvenid@s a bordo!');
 
-
-
 const destinos = [
     { id: 1, nombre: 'Rio de Janeiro', presupuesto: 450 },
     { id: 2, nombre: 'Cartagena', presupuesto: 780 },
@@ -16,17 +14,16 @@ function mostrarDestinos() {
         mensaje += `${destino.id}. ${destino.nombre}\n`;
     });
 
-    // Solicitar al usuario que ingrese el número del destino deseado
+    // Se solicita al usuario que ingrese el número del destino deseado
     let opcionElegida = parseInt(prompt(mensaje));
 
-    // Verificar si la opción ingresada está en el rango de destinos
+    // Se verifica si la opción ingresada está en el rango de destinos
     if (opcionElegida >= 1 && opcionElegida <= destinos.length) {
         let destinoSeleccionado = destinos[opcionElegida - 1];
         let cantidadPasajeros = parseInt(prompt('Ingrese la cantidad de pasajeros:'));
 
-        // Calcular descuento basado en la edad del pasajero
+        // Se calcula el descuento basado en la edad del pasajero
         let descuentoMenores10 = 0.2;
-        let descuentoTotal = 0;
         let presupuestoTotal = destinoSeleccionado.presupuesto * cantidadPasajeros;
         
         alert('Sabias que... los pasajeros menores de 10 años tienen un 20% de descuento? =D')
@@ -38,7 +35,7 @@ function mostrarDestinos() {
             }
         }
 
-        // Mostrar el presupuesto final
+        // Se muestra en pantalla el presupuesto final
         alert(`Presupuesto final para ${cantidadPasajeros} pasajero(s) a ${destinoSeleccionado.nombre}: $${presupuestoTotal}`);
     } else {
         alert('Opción no válida. Por favor, elija un número dentro del rango.');
