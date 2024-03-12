@@ -1,4 +1,4 @@
-alert('--- JS TURISMO --- \n Bienvenid@s a bordo!');
+alert('--- MD TURISMO --- \n Bienvenid@s a bordo!');
 
 const destinos = [
     { id: 1, nombre: 'Rio de Janeiro', presupuesto: 450 },
@@ -43,5 +43,5 @@ function mostrarDestinos() {
     }
 }
 
-// Llamar a la función para mostrar los destinos y solicitar información al usuario
+// Se invoca a la funcion para mostrar los destinos y solicitar información al usuario
 mostrarDestinos();
