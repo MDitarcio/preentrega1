@@ -1,4 +1,4 @@
-alert('--- A MARTE VIAJES --- \n Bienvenid@s a bordo!');
+alert('--- JS TURISMO --- \n Bienvenid@s a bordo!');
 
 const destinos = [
     { id: 1, nombre: 'Rio de Janeiro', presupuesto: 450 },
@@ -37,6 +37,7 @@ function mostrarDestinos() {
 
         // Se muestra en pantalla el presupuesto final
         alert(`Presupuesto final para ${cantidadPasajeros} pasajero(s) a ${destinoSeleccionado.nombre}: $${presupuestoTotal}`);
+        alert('Muchas gracias por confiar en nosotros!')
     } else {
         alert('Opción no válida. Por favor, elija un número dentro del rango.');
     }
